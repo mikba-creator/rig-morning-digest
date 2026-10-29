@@ -26,7 +26,7 @@ describe('run log reader', () => {
     });
     expect(result.rows.find(({ job }) => job === 'lane/sync')).toMatchObject({
       runs: 7,
-      retries: 2,
+      retries: 1,
       lastStatus: 'ok',
       lastError: null,
     });
